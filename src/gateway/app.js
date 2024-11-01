@@ -10,7 +10,7 @@ const service = process.env.OTEL_SERVICE_NAME;
 const logger = newLoger.logger(service);
 
 const app = express();
-const port = process.env.GATEWAY_PORT;
+const port = process.env.PORT;
 
 const SERVICES = {
   users: "http://localhost:9998/",

@@ -8,7 +8,7 @@ const service = process.env.OTEL_SERVICE_NAME;
 const logger = newLoger.logger(service);
 
 const app = express();
-const port = process.env.ORDERS_PORT;
+const port = process.env.PORT;
 
 app.get("/", async (_, res) => {
   try {

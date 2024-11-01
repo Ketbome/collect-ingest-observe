@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "OTEL_SERVICE_NAME=orders-service node --require ../lib/otel.js app.js"
+    "start": "OTEL_SERVICE_NAME=orders-service node --require ../../lib/otel.js app.js"
   }
 }

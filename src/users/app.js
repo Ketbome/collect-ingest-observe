@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const newLoger = require("../../lib/logger");
 const { version } = require("./package.json");
@@ -7,7 +8,7 @@ const service = process.env.OTEL_SERVICE_NAME;
 const logger = newLoger.logger(service);
 
 const app = express();
-const port = process.env.USERS_PORT;
+const port = process.env.PORT;
 
 app.get("/", async (_, res) => {
   try {
