@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "seed": "OTEL_SERVICE_NAME=seed-service node  --require ./src/lib/otel.js seed",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@opentelemetry/auto-instrumentations-node": "0.52.0",
+    "@opentelemetry/exporter-metrics-otlp-proto": "0.54.0",
+    "@opentelemetry/sdk-node": "0.54.0",
+    "@opentelemetry/winston-transport": "0.7.0",
+    "axios": "1.7.7",
+    "dotenv": "16.4.5",
+    "express": "4.21.1",
+    "pg": "8.13.1",
+    "winston": "3.15.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.13.0",
+    "eslint": "9.13.0",
+    "globals": "15.11.0",
+    "prettier": "3.3.3",
+    "faker": "5.5.3"
+  }
+}
