@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "seed": "node  --require ./lib/otel.js seed",
+    "seed": "OTEL_SERVICE_NAME=seed-service node  --require ./lib/otel.js seed",
     "lint": "eslint . --fix"
   },
   "dependencies": {
