@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node --require ../../lib/otel.js app.js"
+    "start": "OTEL_SERVICE_NAME=user-service  node --require ../../lib/otel.js app.js"
   },
   "dependencies": {
     "@opentelemetry/api": "1.9.0",
