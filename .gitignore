@@ -3,3 +3,4 @@ infra/clickhouse
 .env.local
 .vscode
 node_modules
+.pnpm-lock.yaml
